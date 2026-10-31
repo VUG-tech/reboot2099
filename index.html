@@ -1,4 +1,4 @@
-<title>Cyber-ID Profil</title>
+<!doctype html><html lang="da"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover"><title>Cyber-ID Profil</title>
 <meta name="claude:viewport-fit-sides" content="cover">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Orbitron:wght@700;900&family=Rajdhani:wght@500;600;700&family=Share+Tech+Mono&display=swap">
 <style>
@@ -10,11 +10,11 @@ body{min-height:100vh;color:var(--ink);font-family:'Rajdhani',system-ui,sans-ser
 body:before{content:'';position:fixed;inset:0;pointer-events:none;z-index:50;background:repeating-linear-gradient(0deg,rgba(255,255,255,.035) 0 2px,transparent 2px 5px)}
 body:after{content:'';position:fixed;left:0;right:0;height:120px;top:-120px;pointer-events:none;z-index:49;background:linear-gradient(transparent,rgba(0,240,255,.10),transparent);animation:sweep 6s linear infinite}
 @keyframes sweep{to{transform:translateY(calc(100vh + 240px))}}
-.wrap{max-width:520px;margin:0 auto;display:flex;flex-direction:column;gap:18px}
+.wrap{max-width:640px;margin:0 auto;display:flex;flex-direction:column;gap:18px}
 .top{display:flex;justify-content:space-between;font-family:'Share Tech Mono',monospace;font-size:13px;letter-spacing:.14em;color:var(--cyan);text-shadow:0 0 8px var(--cyan)}
 .live{color:var(--pink);text-shadow:0 0 8px var(--pink)}.live:before{content:'';display:inline-block;width:8px;height:8px;border-radius:50%;background:var(--pink);margin-right:8px;animation:blink 1s steps(2) infinite}
 @keyframes blink{50%{opacity:.15}}
-.boot{font-family:'Share Tech Mono',monospace;font-size:14px;letter-spacing:.08em;color:var(--cyan);min-height:92px;line-height:1.7}
+.boot{font-family:'Share Tech Mono',monospace;font-size:15px;letter-spacing:.08em;color:var(--cyan);min-height:92px;line-height:1.7}
 .boot .ok{color:#4dff9a}.boot .no{color:var(--pink)}
 .card{display:none;flex-direction:column;gap:18px;animation:in .8s ease both}
 .card.show{display:flex}
@@ -36,7 +36,7 @@ body:after{content:'';position:fixed;left:0;right:0;height:120px;top:-120px;poin
 .v{font-weight:700;font-size:28px;line-height:1.1;color:#fff;margin-top:2px;min-width:0;overflow-wrap:anywhere}
 .v.big{font-family:'Orbitron',sans-serif;font-weight:900;font-size:34px;color:var(--sc);text-shadow:0 0 12px var(--sc)}
 .mono{font-family:'Share Tech Mono',monospace;letter-spacing:.2em}
-.tag{font-size:19px;line-height:1.35;color:var(--ink);font-weight:500}
+.tag{font-size:21px;line-height:1.35;color:var(--ink);font-weight:500}
 .wave{height:54px;width:100%;display:block}
 .wave path{fill:none;stroke:var(--sc);stroke-width:2.5;stroke-linejoin:round;filter:drop-shadow(0 0 5px var(--sc))}
 .wv{animation:wv 3s linear infinite}
@@ -92,7 +92,7 @@ var TAG={
 'Datasmugler':'Flytter oplysninger, ingen kan se. Især dem, der ligger i mødereferater.',
 'Systemarkitekt':'Tegner de planer, resten af systemet følger. Eller i det mindste skimter.',
 'Signaljæger':'Opfanger alt, hvad der sendes. Især det, der slet ikke var ment til nogen.',
-'Androidepilot':'Styrer maskiner, der stadig tror, de har fri vilje. Det gør de ikke.'};
+'Androidepilot':'Styrer maskiner, der stadig tror, de har fri vilje. Det har de ikke.'};
 function $(i){return document.getElementById(i)}
 var h=(location.hash||'').replace('#','').replace(/\D/g,'');
 var rec=null;for(var i=0;i<P.length;i++)if(P[i][0]===h)rec=P[i];
